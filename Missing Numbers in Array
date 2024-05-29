@@ -1,0 +1,6 @@
+def missingNumber(array,n):
+  sum = n * (n+1)//2
+  temp_sum = 0
+  for i in range(0, n-1):
+      temp_sum = temp_sum + array[i]
+  return sum - temp_sum
